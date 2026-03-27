@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Parks Explorer - Book Your Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-leaf"></i> Kenya Parks Explorer
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#parks" class="nav-link">Parks</a></li>
+                <li><a href="#booking" class="nav-link">Book Now</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Kenya's Wildlife Paradise</h1>
+            <p class="hero-subtitle">Experience the majesty of African wildlife and stunning landscapes</p>
+            <a href="#parks" class="cta-button">Explore Parks</a>
+        </div>
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200&h=600&fit=crop" alt="Kenya Wildlife">
+        </div>
+    </section>
+
+    <!-- Parks Section -->
+    <section id="parks" class="parks-section">
+        <div class="container">
+            <h2 class="section-title">Featured National Parks</h2>
+            <p class="section-subtitle">Choose your next adventure</p>
+            
+            <div class="parks-grid">
+                <!-- Maasai Mara -->
+                <div class="park-card" data-park="maasai-mara">
+                    <div class="park-image">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400&h=300&fit=crop" alt="Maasai Mara">
+                        <div class="park-overlay">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="park-info">
+                        <h3>Maasai Mara National Reserve</h3>
+                        <p class="park-description">Kenya's most famous wildlife reserve, home to the Big Five and the Great Migration.</p>
+                        <div class="park-stats">
+                            <span><i class="fas fa-map-marker-alt"></i> Rift Valley</span>
+                            <span><i class="fas fa-star"></i> 4.9/5</span>
+                        </div>
+                        <p class="park-price">From <strong>KES 5,000</strong></p>
+                    </div>
+                </div>
+
+                <!-- Amboseli National Park -->
+                <div class="park-card" data-park="amboseli">
+                    <div class="park-image">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400&h=300&fit=crop" alt="Amboseli">
+                        <div class="park-overlay">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="park-info">
+                        <h3>Amboseli National Park</h3>
+                        <p class="park-description">Known for its large elephant herds and stunning views of Mount Kilimanjaro.</p>
+                        <div class="park-stats">
+                            <span><i class="fas fa-map-marker-alt"></i> Kajiado</span>
+                            <span><i class="fas fa-star"></i> 4.7/5</span>
+                        </div>
+                        <p class="park-price">From <strong>KES 4,500</strong></p>
+                    </div>
+                </div>
+
+                <!-- Tsavo East & West -->
+                <div class="park-card" data-park="tsavo">
+                    <div class="park-image">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400&h=300&fit=crop" alt="Tsavo">
+                        <div class="park-overlay">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="park-info">
+                        <h3>Tsavo East & West National Parks</h3>
+                        <p class="park-description">Kenya's largest parks featuring diverse wildlife and scenic landscapes.</p>
+                        <div class="park-stats">
+                            <span><i class="fas fa-map-marker-alt"></i> Coast Region</span>
+                            <span><i class="fas fa-star"></i> 4.6/5</span>
+                        </div>
+                        <p class="park-price">From <strong>KES 4,000</strong></p>
+                    </div>
+                </div>
+
+                <!-- Lake Nakuru National Park -->
+                <div class="park-card" data-park="nakuru">
+                    <div class="park-image">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400&h=300&fit=crop" alt="Lake Nakuru">
+                        <div class="park-overlay">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="park-info">
+                        <h3>Lake Nakuru National Park</h3>
+                        <p class="park-description">Famous for flamingos, leopards, and rhinos in a picturesque lake setting.</p>
+                        <div class="park-stats">
+                            <span><i class="fas fa-map-marker-alt"></i> Rift Valley</span>
+                            <span><i class="fas fa-star"></i> 4.5/5</span>
+                        </div>
+                        <p class="park-price">From <strong>KES 3,500</strong></p>
+                    </div>
+                </div>
+
+                <!-- Hell's Gate National Park -->
+                <div class="park-card" data-park="hellsgate">
+                    <div class="park-image">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400&h=300&fit=crop" alt="Hell's Gate">
+                        <div class="park-overlay">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="park-info">
+                        <h3>Hell's Gate National Park</h3>
+                        <p class="park-description">Adventure awaits with hiking, biking, and geothermal wonders.</p>
+                        <div class="park-stats">
+                            <span><i class="fas fa-map-marker-alt"></i> Nakuru</span>
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                        </div>
+                        <p class="park-price">From <strong>KES 3,000</strong></p>
+                    </div>
+                </div>
+
+                <!-- Mount Kenya National Park -->
+                <div class="park-card" data-park="mountkenya">
+                    <div class="park-image">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400&h=300&fit=crop" alt="Mount Kenya">
+                        <div class="park-overlay">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="park-info">
+                        <h3>Mount Kenya National Park</h3>
+                        <p class="park-description">Climb Africa's second-highest peak with breathtaking mountain views.</p>
+                        <div class="park-stats">
+                            <span><i class="fas fa-map-marker-alt"></i> Central Region</span>
+                            <span><i class="fas fa-star"></i> 4.9/5</span>
+                        </div>
+                        <p class="park-price">From <strong>KES 6,500</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Park Details Modal -->
+    <div class="modal" id="parkModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Park">
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <div class="modal-details">
+                        <h4>Park Highlights:</h4>
+                        <ul id="modalHighlights"></ul>
+                    </div>
+                    <p class="modal-price">Price: <strong id="modalPrice"></strong></p>
+                    <button class="cta-button" onclick="scrollToBooking()">Book This Park</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <h2 class="section-title">Book Your Adventure</h2>
+            <p class="section-subtitle">Fill in your details and select your park</p>
+
+            <div class="booking-container">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="parkSelect">Select Park *</label>
+                            <select id="parkSelect" name="park" required>
+                                <option value="">Choose a park...</option>
+                                <option value="maasai-mara">Maasai Mara National Reserve - KES 5,000</option>
+                                <option value="amboseli">Amboseli National Park - KES 4,500</option>
+                                <option value="tsavo">Tsavo East & West - KES 4,000</option>
+                                <option value="nakuru">Lake Nakuru National Park - KES 3,500</option>
+                                <option value="hellsgate">Hell's Gate National Park - KES 3,000</option>
+                                <option value="mountkenya">Mount Kenya National Park - KES 6,500</option>
+                            </select>
+                            <span class="error-message" id="parkError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="visitDate">Visit Date *</label>
+                            <input type="date" id="visitDate" name="visitDate" required>
+                            <span class="error-message" id="dateError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="numVisitors">Number of Visitors *</label>
+                            <input type="number" id="numVisitors" name="numVisitors" min="1" max="20" required>
+                            <span class="error-message" id="visitorsError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="duration">Duration (Days) *</label>
+                            <input type="number" id="duration" name="duration" min="1" max="14" required>
+                            <span class="error-message" id="durationError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests</label>
+                        <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Any special accommodations or requests?"></textarea>
+                    </div>
+
+                    <div class="price-summary">
+                        <h3>Price Summary</h3>
+                        <div class="price-row">
+                            <span>Base Price per Person:</span>
+                            <span id="basePriceDisplay">KES 0</span>
+                        </div>
+                        <div class="price-row">
+                            <span>Number of Visitors:</span>
+                            <span id="visitorsDisplay">0</span>
+                        </div>
+                        <div class="price-row">
+                            <span>Duration:</span>
+                            <span id="durationDisplay">0 days</span>
+                        </div>
+                        <div class="price-row total">
+                            <span>Total Price:</span>
+                            <span id="totalPrice">KES 0</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="cta-button submit-btn">Proceed to Payment</button>
+                </form>
+
+                <div class="booking-image">
+                    <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=500&h=600&fit=crop" alt="Safari Experience">
+                    <div class="booking-badge">
+                        <i class="fas fa-check-circle"></i>
+                        Secure Payment
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div class="modal" id="paymentModal">
+        <div class="modal-content payment-modal">
+            <span class="close">&times;</span>
+            <h2>Complete Your Payment</h2>
+            <div class="payment-info">
+                <p>Park: <strong id="paymentPark"></strong></p>
+                <p>Total Amount: <strong id="paymentAmount"></strong></p>
+            </div>
+            <form id="paymentForm" class="payment-form">
+                <div class="form-group">
+                    <label for="cardName">Cardholder Name</label>
+                    <input type="text" id="cardName" name="cardName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" maxlength="5" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="cta-button">Pay Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Have questions? We're here to help</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+254 712 345 678</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@kenyaparks.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon - Fri: 9AM - 6PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Kenya Parks Explorer</h4>
+                    <p>Discover the beauty of Kenya's wildlife and natural wonders.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#parks">Parks</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Parks</h4>
+                    <ul>
+                        <li><a href="#">Maasai Mara</a></li>
+                        <li><a href="#">Amboseli</a></li>
+                        <li><a href="#">Tsavo</a></li>
+                        <li><a href="#">Mount Kenya</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kenya Parks Explorer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
